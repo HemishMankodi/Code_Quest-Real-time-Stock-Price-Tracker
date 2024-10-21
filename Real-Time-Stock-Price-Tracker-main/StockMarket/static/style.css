@@ -1,0 +1,141 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #ADD8E6; /* Light blue background */
+}
+
+h1 {
+    text-align: center;
+}
+
+/* Login Page Styles */
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for readability */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.login-input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-button:hover {
+    background-color: #218838;
+}
+
+.messages {
+    color: red;
+    list-style: none;
+    padding: 0;
+}
+
+/* Stock Ticker Styles */
+#add-ticker-form {
+    display: flex;                  /* Flexbox for centering */
+    justify-content: center;        /* Center horizontally */
+    margin-bottom: 20px;           /* Space below the form */
+}
+
+#new-ticker {
+    width: 150px;                  /* Set a fixed width for the input box */
+    padding: 10px;                 /* Padding for the input */
+    font-size: 16px;               /* Font size for the input */
+    border: 1px solid #ccc;        /* Border for the input */
+    border-radius: 4px;            /* Rounded corners */
+    margin-right: 10px;            /* Space between input and button */
+}
+
+#add-ticker-form button {
+    padding: 10px 15px;            /* Padding for the button */
+    font-size: 16px;                /* Font size for the button */
+    background-color: #28a745;     /* Button color */
+    color: white;                   /* Button text color */
+    border: none;                   /* No border */
+    border-radius: 4px;            /* Rounded corners */
+}
+
+/* Stock Grid */
+#ticker-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.stock-box {
+    width: 200px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    color: #000; /* Ensure text is visible by default */
+}
+
+.stock-box.green {
+    background-color: #28a745; /* Green for stock up */
+    color: white; /* White text for better contrast */
+}
+
+.stock-box.red {
+    background-color: #dc3545; /* Red for stock down */
+    color: white; /* White text for better contrast */
+}
+
+.current-price {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.open-price {
+    color: lightgray;
+    font-size: 14px;
+}
+
+/* Color Classes for Stock Prices */
+.red {
+    background-color: #ffcccc; /* Light red background */
+}
+
+.green {
+    background-color: #ccffcc; /* Light green background */
+}
+
+.gray {
+    color: #808088;
+}
+
+/* Flashing Background Colors */
+.red-flash {
+    background-color: #ffcccc !important; 
+}
+
+.green-flash {
+    background-color: #ccffcc !important; 
+}
+
+.gray-flash {
+    background-color: #ccc !important; 
+}
