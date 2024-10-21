@@ -11,3 +11,5 @@ Step 2: Run the Application
 
 Step 3: Access the Application
     Open your web browser and go to http://127.0.0.1:5000 to access the application.
+
+Step 4: Use temporary username and password : 'admin' and 'password' respectively.
